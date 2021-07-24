@@ -1,13 +1,12 @@
 # Todo-app
-TITLE: - ToDo App
-Introduction: -
+# TITLE: - ToDo App
+## Introduction: -
 TODO means "to do" or “to be done”. Something that someone will need to do or wants to do. It’s something like setting a target to achieve within some period of time. A short goal or a list of activities to be done or to achieve can be set in the “todo” list.
-Using Technologies: - HTML, CSS, JAVASCRIPT, jsp and Servlets, JDBC and MYSQL database
-Using Technologies: - HTML, CSS, JAVASCRIPT, jsp and Servlets, 
-JDBC and MYSQL database
-IDE Tools: - NetBeans and VScode 
-Used Server: - Tomcat 
-Used libraries and their versions: -
+
+### Using Technologies: - HTML, CSS, JAVASCRIPT, jsp and Servlets, JDBC and MYSQL database
+### IDE Tools: - NetBeans and VScode 
+### Used Server: - Tomcat 
+### Used libraries and their versions: -
 • For server- Tomcat 9.0
 • For database – MySQL 8.0
 • For ide – NetBeans 12.0
@@ -20,6 +19,7 @@ Database: -Database has 2 tables. One is of users table and the other is todos
 table.
 Users table will store the user details that will be used to login
 And the todos table will store all the todo related details.
+
 The table description is:
 CREATE TABLE `users` (
  `id` int(3) NOT NULL AUTO_INCREMENT,
@@ -38,7 +38,7 @@ CREATE TABLE `todos` (
  `title` varchar(255) DEFAULT NULL,
  PRIMARY KEY (`id`)
 ) 
-Implementation: -
+## Implementation: -
 Shortly, in this todo web-app firstly a person has to register 
 themselves and then they can login to their respective todo page using 
 their username and password that they have registered themselves 
@@ -65,6 +65,7 @@ This page will be shown when user will click on the “Add ToDo”
 button. Here the user can add a new todo by filling in the basic details 
 of the todo like title, description, status and target date and then save 
 after that this todo will also be visible with all the other todos. 
+
 This project has been made by 
 Shivesh Bharti
 MCA, NIT RAIPU
