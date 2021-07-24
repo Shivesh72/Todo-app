@@ -1,0 +1,64 @@
+<html>
+
+<head>
+<title>ToDo Home</title>
+<link rel="stylesheet" type="text/css" href="todocss.css">
+</head>
+
+<body>
+	<div class="main">
+		<header>
+			<div class="nav">
+				<div class="logo">
+					<img src="/to-do icon.png">
+				</div>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="register/register.jsp">Sign up</a></li>
+					<li><a href="login/login.jsp">Login</a></li>
+					<li><a href="#">About us</a></li>
+				</ul>
+				<div class="title">
+					<h1>TODO LIST</h1>
+				</div>
+			</div>
+		</header>
+
+		<div class="container">
+			<div id="col">
+				<h1>Login Form</h1>
+				<div class="alert alert-failure center" role="alert">
+					<p>${NOTIFICATION}</p>
+					<hr style="display: inline-flex; padding-bottom: 10px;">
+					<p></p>
+				</div>
+				<form action="<%=request.getContextPath()%>/login" method="post"
+					id="fo">
+					<table>
+
+						<tr>
+							<td><label for="uname">User Name:</label></td>
+							<td><input type="text" class="form-control" id="username"
+								placeholder="User Name" name="username" required></td>
+
+						</tr>
+
+						<tr>
+							<td><label for="uname">Password:</label></td>
+							<td><input type="password" class="form-control"
+								id="password" placeholder="Password" name="password" required></td>
+						</tr>
+
+						<tr>
+							<td></td>
+							<td><button type="submit" class="loginbtn">Login</button></td>
+
+						</tr>
+					</table>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
